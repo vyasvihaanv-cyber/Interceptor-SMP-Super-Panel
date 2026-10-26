@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interceptor SMP – Minecraft Survival Server</title>
+<meta name="description" content="Interceptor SMP is a Minecraft survival multiplayer server. Join at play.interceptor.dpdns.org.">
+<meta property="og:title" content="Interceptor SMP">
+<meta property="og:description" content="Join the server at play.interceptor.dpdns.org">
+<meta name="theme-color" content="#0d1a22">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Interceptor SMP</a>
+  <nav><a href="#join">Join</a><a href="#rules">Rules</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <svg class="reticle" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="100" cy="100" r="36" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M100 8v48M100 144v48M8 100h48M144 100h48" stroke="currentColor" stroke-width="2"/>
+    </svg>
+    <h1>Interceptor SMP</h1>
+    <p class="lead">A Minecraft survival server. Copy the address, open Multiplayer, and add it.</p>
+
+    <button class="ip" id="copy" type="button" aria-label="Copy server address">
+      <span class="ip-text" id="ip">play.interceptor.dpdns.org</span>
+      <span class="ip-action" id="copy-label">Copy address</span>
+    </button>
+
+    <p class="status" id="status" role="status" aria-live="polite">
+      <span class="dot" id="dot"></span><span id="status-text">Checking server status…</span><noscript> Enable JavaScript to see live status.</noscript>
+    </p>
+  </section>
+
+  <section id="join" class="block">
+    <h2>How to join</h2>
+    <ol class="steps">
+      <li>Open Minecraft and choose <strong>Multiplayer</strong>.</li>
+      <li>Select <strong>Add Server</strong>.</li>
+      <li>Paste <code>play.interceptor.dpdns.org</code> as the server address.</li>
+      <li>Save, then select Interceptor SMP and press <strong>Join Server</strong>.</li>
+    </ol>
+  </section>
+
+  <section id="rules" class="block">
+    <h2>Rules</h2>
+    <p>Edit this list in <code>index.html</code> to match your server.</p>
+    <ul class="rules">
+      <li>Be respectful to other players.</li>
+      <li>No cheating, x-ray, or exploiting bugs.</li>
+      <li>No griefing or stealing.</li>
+      <li>Follow staff instructions.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Interceptor SMP is not affiliated with Mojang or Microsoft.</p>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>

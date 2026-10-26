@@ -1,0 +1,35 @@
+:root{
+  --bg:#0d1a22; --panel:#14262f; --line:#27424e;
+  --text:#e4eef2; --muted:#9db3bd; --accent:#f0b43c; --on:#5fd38a; --off:#e8685d;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,4vw,3rem)}
+.brand{display:flex;gap:.6rem;align-items:center;font:800 1.15rem var(--head);text-decoration:none}
+nav{display:flex;gap:1.5rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text)}
+.hero{position:relative;overflow:hidden;text-align:center;padding:clamp(3rem,10vw,7rem) 1.25rem 4rem}
+.reticle{position:absolute;left:50%;top:50%;width:min(90vw,640px);transform:translate(-50%,-50%);color:var(--line);opacity:.55;pointer-events:none;animation:spin 90s linear infinite}
+h1{position:relative;margin:0;font:800 clamp(2.8rem,10vw,6.5rem)/1 var(--head);letter-spacing:-.03em}
+.lead{position:relative;max-width:34rem;margin:1.25rem auto 2rem;color:var(--muted)}
+.ip{position:relative;display:inline-flex;flex-direction:column;gap:.15rem;align-items:center;max-width:100%;padding:1rem 2rem;background:var(--panel);color:var(--text);border:2px solid var(--accent);border-radius:6px;cursor:pointer;font:inherit}
+.ip:hover{background:#1a3340}
+.ip-text{font:800 clamp(1.15rem,4.5vw,2rem) var(--head);overflow-wrap:anywhere}
+.ip-action{font-size:.95rem;color:var(--accent)}
+.status{position:relative;display:inline-flex;gap:.6rem;align-items:center;margin:1.5rem 0 0;color:var(--muted)}
+.dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--muted)}
+.dot.on{background:var(--on)}.dot.off{background:var(--off)}
+.block{max-width:42rem;margin:0 auto;padding:2.5rem 1.25rem}
+h2{margin:0 0 1rem;font:800 1.9rem var(--head);letter-spacing:-.01em}
+.steps,.rules{padding-left:1.4rem}
+.steps li,.rules li{margin:.5rem 0;padding-left:.3rem}
+code{padding:.1rem .4rem;background:var(--panel);border:1px solid var(--line);border-radius:4px;font-size:.95em;overflow-wrap:anywhere}
+footer{padding:3rem 1.25rem;text-align:center;color:var(--muted);font-size:.9rem}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.reticle{animation:none}html{scroll-behavior:auto}}
